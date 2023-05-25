@@ -11,4 +11,4 @@
 ![Главное окно](zap.jpg)
 Также для приложения были сгенерированы javadocs, с которыми можно ознакомится в [папке](https://github.com/Elizaveta-Strukova/Calculation-statistical-indicators/tree/main/JavaDocs). 
 ## Средства разработки
-Для создания GUI был использован JavaFx. В качестве базы данных была использована PostgreSQL.
+Для создания GUI был использован JavaFx. В качестве базы данных была использована h2.
