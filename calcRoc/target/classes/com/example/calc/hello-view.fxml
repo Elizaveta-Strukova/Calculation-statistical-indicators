@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox alignment="CENTER" prefHeight="605.0" prefWidth="819.0" spacing="20.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.calc.HelloController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+   <AnchorPane prefHeight="567.0" prefWidth="779.0">
+      <children>
+
+
+          <Label layoutX="33.0" layoutY="47.0" text="Чувствительность (%)" />
+         <TextField fx:id="chuvs" layoutX="286.0" layoutY="43.0" />
+          <Label layoutX="33.0" layoutY="94.0" text="Специфичность (%)" />
+         <TextField fx:id="spec" layoutX="286.0" layoutY="90.0" />
+          <Label layoutX="33.0" layoutY="135.0" text="Отрицательная вероятность болезни (%)" />
+          <TextField fx:id="minus" layoutX="286.0" layoutY="131.0" />
+          <Label layoutX="33.0" layoutY="181.0" text="Положительная вероятность болезни (%)" />
+          <TextField fx:id="plus" layoutX="286.0" layoutY="177.0" />
+          <Label layoutX="33.0" layoutY="226.0" text="Распространенность заболевания (%)" />
+         <TextField fx:id="rasp" layoutX="286.0" layoutY="222.0" />
+          <Label layoutX="33.0" layoutY="269.0" text="Прогностическая ценность положительного результата (%)" />
+         <TextField fx:id="pcplus" layoutX="286.0" layoutY="302.0" />
+          <Label layoutX="23.0" layoutY="353.0" text="Прогностическая ценность отрицательного результата (%)" />
+         <TextField fx:id="pcminus" layoutX="286.0" layoutY="386.0" />
+
+         <TableView fx:id="table2" layoutX="496.0" layoutY="103.0" prefHeight="131.0" prefWidth="216.0">
+   </TableView>
+         <Button layoutX="45.0" layoutY="412.0" mnemonicParsing="false" onAction="#onButtonClick" prefHeight="52.0" prefWidth="139.0" text="Рассчитать!" />
+         <Label layoutX="45.0" layoutY="6.0" text="Расчет статистических показателей диагностического теста по выборочным данным">
+            <font>
+               <Font size="18.0" />
+            </font>
+         </Label>
+         <Label layoutX="502.0" layoutY="69.0" text="Таблица сопряжённости">
+            <font>
+               <Font size="18.0" />
+            </font>
+         </Label>
+         <Button layoutX="551.0" layoutY="412.0" mnemonicParsing="false" onAction="#onButton" prefHeight="52.0" prefWidth="150.0" text="Записать результат!" />
+         <TextField fx:id="file" layoutX="552.0" layoutY="373.0" />
+         <Label layoutX="527.0" layoutY="344.0" text="Введите название текстового файла" />
+         <Label fx:id="message1" layoutX="283.0" layoutY="485.0" prefHeight="18.0" prefWidth="237.0" />
+         <Label fx:id="message2" layoutX="284.0" layoutY="523.0" prefHeight="18.0" prefWidth="186.0" />
+      </children>
+   </AnchorPane>
+
+</VBox>
